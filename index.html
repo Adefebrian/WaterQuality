@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+      />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Water Quality</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="mx-auto text-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5882/5882900.png"
+            alt="Logo"
+            />
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-flex">
+      <button id="fetch-data" class="btn btn-primary">Lihat Hasil</button>
+      <div class="row">
+        <div class="col-5">
+          <div id="water-info" class="card">
+            <div class="text-center">Informasi Kualitas Air</div>
+            <div class="data-flex-container">
+              <div class="data-label" style="align-self: flex-end">
+                Location
+              </div>
+              <div class="data-label" style="align-self: flex-end"></div>
+              <div style="align-self: flex-start">
+                : <span id="data-location"></span>
+              </div>
+            </div>
+            <div class="data-flex-container">
+              <div class="data-label" style="align-self: flex-end">TDS</div>
+              <div class="data-label" style="align-self: flex-end"></div>
+              <div style="align-self: flex-start">
+                : <span id="data-tds"></span>
+              </div>
+            </div>
+            <div class="data-flex-container">
+              <div class="data-label" style="align-self: flex-end">is Safe</div>
+              <div class="data-label" style="align-self: flex-end"></div>
+              <div style="align-self: flex-start">
+                : <span id="data-is-safe"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-7">
+          <div id="water-description" class="card">
+            <div class="text-center">Keterangan Pemanfaatan</div>
+            <span id="data-keterangan"></span>
+          </div>
+        </div>
+      </div>
+      <!-- create partner-container that contains card -->
+      <div id="partners-container"></div>
+
+    </div>
+    <footer>
+      </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
